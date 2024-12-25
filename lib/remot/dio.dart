@@ -7,10 +7,7 @@ class DioClient {
     dio = Dio(
       BaseOptions(
         baseUrl: 'https://student.valuxapps.com/api/',      
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json',
-        },
+       
       ),
     );
   }
@@ -22,12 +19,14 @@ class DioClient {
     String? token,
   }) async {
     dio?.options.headers={
+       'Content-Type': 'application/json',
         "lang":lang,
-      "Authorization":token,
+      "Authorization":token??'',
       };
     try {
       final response = await dio!.get(
         endpoint,
+        
         queryParameters: queryParameters,
       );
       return response;

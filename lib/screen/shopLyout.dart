@@ -15,9 +15,7 @@ class Shoplyout extends StatelessWidget {
             elevation: 0,
             leading: Padding(
               padding: const EdgeInsets.all(8.0),
-              child: CircleAvatar(
-                backgroundImage: AssetImage('assets/profile.jpg'), // صورة شخصية
-              ),
+             
             ),
             title: Text(
               "ClickMart",

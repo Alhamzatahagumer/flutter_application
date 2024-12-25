@@ -6,6 +6,7 @@ import 'package:flutter_application_1/screen/shopLyout.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 
+
 class SignInScreen extends StatelessWidget {
   var formKey =GlobalKey<FormState>();
   final TextEditingController _emailController = TextEditingController();

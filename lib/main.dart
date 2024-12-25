@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/cashHelper/constant.dart';
 import 'package:flutter_application_1/cashHelper/sharedPref.dart';
 import 'package:flutter_application_1/cubit/cubitSignin.dart';
 import 'package:flutter_application_1/cubit/shopCubit.dart';
@@ -46,7 +47,7 @@ class MyApp extends StatelessWidget {
           // التهيئة إذا لزم الأمر
         ),
         BlocProvider(
-          create:   (BuildContext context) => Shopcubit(),
+          create:   (BuildContext context) => Shopcubit()..HomeGetData(),
 
         )
       ],
